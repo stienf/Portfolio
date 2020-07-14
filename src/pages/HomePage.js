@@ -13,7 +13,7 @@ function HomePage(props) {
             <Container fluid={false}>
                 <Row>
                     <Col md={8} sm={12}>
-                        <form method="get" action="/about">
+                        <form method="get" action="/over">
                             <button className="homeBtn" type="submit">MEER OVER MIJ</button>
                         </form>
 

@@ -15,7 +15,6 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import WebAppPage from './pages/WebAppPage';
 import PhotographyPage from './pages/PhotographyPage';
-import CvPage from './pages/CvPage';
 import PhotoPageVietnam from './pages/PhotoPageVietnam';
 import PhotoPageCA from './pages/PhotoPageCA';
 import PhotoPageZA from './pages/PhotoPageZA';
@@ -33,7 +32,7 @@ class App extends React.Component {
       title: 'Stien Franssens',
       headerLinks: [
         { title: 'Home', path: '/' },
-        { title: 'About', path: '/about' },
+        { title: 'About', path: '/over' },
         { title: 'Contact', path: '/contact' },
       ],
       home: {
@@ -59,7 +58,7 @@ class App extends React.Component {
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/about">Over mij</Link>
+                <Link className="nav-link" to="/over">Over mij</Link>
                 <NavDropdown title="Portfolio" id="collasible-nav-dropdown">
                   <NavDropdown.Item href="/fotografie">Fotografie</NavDropdown.Item>
                   <NavDropdown.Item href="/web-applicaties">Websites</NavDropdown.Item>
@@ -71,7 +70,7 @@ class App extends React.Component {
           </Navbar>
 
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} />} />
-          <Route path="/about" render={() => <AboutPage title={this.state.about.title} />} />
+          <Route path="/over" render={() => <AboutPage title={this.state.about.title} />} />
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
 
           <Route path="/fotografie" render={() => <PhotographyPage />} />

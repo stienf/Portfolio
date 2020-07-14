@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import cocktail from '../assets/images/cocktail.png';
 import recipe from '../assets/images/recipe.jpg';
-import test from '../assets/images/test.png';
+import blogapp from '../assets/images/blogapp.png';
 
 import Card from '../components/Card';
 import Container from 'react-bootstrap/Container';
@@ -20,6 +20,7 @@ class Carousel extends Component {
                     subTitle: 'API project',
                     imgSrc: cocktail,
                     link: 'https://stienf.github.io/CocktailShaker/',
+                    linkCode: 'https://github.com/stienf/CocktailShaker',
                     selected: false
                 },
                 {
@@ -28,14 +29,16 @@ class Carousel extends Component {
                     subTitle: 'Javascript project',
                     imgSrc: recipe,
                     link: 'https://stienf.github.io/RecipeBlog/',
+                    linkCode: 'https://github.com/stienf/RecipeBlog',
                     selected: false
                 },
                 {
                     id: 2,
                     title: 'Blog Application',
                     subTitle: 'Express blog app',
-                    imgSrc: test,
-                    link: 'https://stienf.github.io/Cocktail-Shaker/',
+                    imgSrc: blogapp,
+                    link: undefined,
+                    linkCode: 'https://github.com/stienf/ExpressBlogProject',
                     selected: false
                 },
             ]
@@ -63,7 +66,7 @@ class Carousel extends Component {
 
     makeItems = (items) => {
         return items.map(item => {
-            return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
+            return <Card className="card" item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
         })
     }
 
@@ -71,7 +74,7 @@ class Carousel extends Component {
     render() {
         return(
             <Container fluid={true}>
-                <Row className="justify-content-around">
+                <Row className="justify-content-around webRow">
                     {this.makeItems(this.state.items)}
                 </Row>
             </Container>

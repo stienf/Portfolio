@@ -1,11 +1,56 @@
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-image: url(./assets/images/photo-of-white-wall-1484759.jpg);
+
+
 }
+
+.displaysmall{
+  display: none !important;
+}
+
+.titles h1, .PhotoTitle, .webAppTitle, .AboutTitle {
+font-family: 'Candal', sans-serif;
+font-size: 100px;
+text-transform: uppercase;
+color: rgba(158, 198, 236, 0.5);
+background-image: url(./assets/images/ezgif.com-crop.gif);
+opacity: 0.7;
+background-size: 130vh;
+background-position: center;
+background-repeat: repeat;
+-webkit-background-clip: text;
+background-clip: text;
+
+color: transparent;
+
+-webkit-text-stroke-color: #9EC6EC;
+}
+
+
+.PhotoTitle, .webAppTitle{
+  text-align: center;
+  padding: 5%;
+  background-image: url(./assets/images/tenor.gif) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.AboutTitle {
+  text-align: left !important;
+  font-size: 85px !important;
+  padding-bottom: 5% !important;
+  margin-left: px !important;
+
+  
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -19,9 +64,12 @@ code {
 
 .g-card-image {
   border-radius: 10px;
-  width: 300px;
+  width: 320px;
   height: 480px;
-  box-shadow: 0px 0px 3px 1px #CCC;
+  -webkit-box-shadow: 7px 3px 29px -7px rgba(0,0,0,0.6);
+-moz-box-shadow: 7px 3px 29px -7px rgba(0,0,0,0.6);
+box-shadow: 7px 3px 29px -7px rgba(0,0,0,0.6);
+  box-sizing: border-box;
 }
 
 .g-card-title {
@@ -37,4 +85,746 @@ code {
 .g-card-sub-title {
   font-size: 16px;
   margin: 0px;
+}
+
+.success-msg {
+  color: blue;
+  padding: 10px 15px;
+}
+
+.err-msg {
+  color: red;
+  padding: 10px 15px;
+}
+
+.title {
+  color:#9EC6EC;
+  font-family: 'Montserrat', sans-serif;  
+  font-size: 20px;
+
+}
+
+.title:hover {
+  color: #7796b2;
+}
+
+.homepage {
+  background-image: url(./assets/images/ZA.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100vh;
+  padding-top: 7%;
+}
+
+.contactpage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  width:750px;
+  
+}
+
+.navbar {
+  background: white;
+}
+
+
+
+button {
+position: relative;
+font-family: 'Roboto', sans-serif;
+text-transform: uppercase;
+
+
+
+}
+
+.homeBtn, .over-btn{
+  background-color: #9EC6EC!important;
+  color: whitesmoke !important;
+  top: -15px;
+  padding: 8px;
+  border-color: transparent;
+  border-radius: 5px;
+}
+
+
+
+.homeBtn:hover, .over-btn:hover {
+  background-color: #7796b2  !important;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: lightslategray;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+h1 {
+  min-width: 800px;
+}
+
+.kop {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+.form {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  width: 90%;
+  text-align: justify;
+}
+
+.contactrow {
+  margin-right: 50%;
+  
+}
+
+.form-background {
+min-height: 100vh;
+  background-color:#9EC6EC;
+  padding-top: 6.5%;
+  ;
+}
+
+.form-title {
+  background-image: url(./assets/images/photo-of-white-wall-1484759.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center !important;
+  align-items: center !important;
+  padding-top: 5%;
+}
+
+
+h3 {
+font-family: 'Candal', sans-serif;
+font-size: 40px !important;
+text-transform: uppercase;
+background-position: center;
+background-repeat: repeat;
+-webkit-background-clip: text;
+background-clip: text;
+text-align: start;
+background-image: url(./assets/images/photo-of-white-wall-1484759.jpg);
+background-size: 140vh !important;
+
+color: transparent;
+
+-webkit-text-stroke-color: #9EC6EC;
+}
+
+
+#full-name, #email, #message {
+  background-image: url(./assets/images/photo-of-white-wall-1484759.jpg);
+  height: fit-content;
+}
+
+.g-card-title{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  color:#9EC6EC;
+}
+
+.g-card-sub-title {
+  
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  margin-bottom: -15px;
+
+}
+
+.webBtn, .codeBtn {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #7796b2 !important;
+  border: 1px solid #eca09f;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 8px !important;
+  }
+
+.webBtn:hover, .codeBtn:hover {
+  background-color: #eca09f;
+  color: whitesmoke !important;
+  text-decoration: none;
+}
+
+  .g-card-info {
+   justify-content: center;
+  }
+
+  .test {
+   text-align: center; 
+ }
+
+ .photoRow {
+   margin-left: 9px!important;
+   margin-right: 9px !important;
+   padding-right: 2vh !important;
+   padding-left: 2vh !important;
+   
+ }
+
+ .webRow {
+   padding-right: 5vh !important;
+   padding-left: 5vh !important;
+ }
+
+.fa-phone-alt, .fa-envelope, .linkedin, .github{
+font-size: 30px;
+color: #eca09f;
+text-align: center;
+padding-bottom: 2%;
+padding-top: 4%;
+}
+
+.fa-phone-alt:hover, .fa-envelope:hover {
+  color: #e57575;
+}
+
+.linkedin, .github {
+  padding: 1%;
+  color: #7796b2
+}
+.linkedin:hover, .github:hover{
+  color: #9EC6EC;
+}
+
+.col {
+  min-width: unset !important;
+}
+
+.tel, .mail {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+font-size: 20px;
+color: #9EC6EC;
+text-align: center;
+}
+
+.tel:hover, .mail:hover {
+  color: #7796b2 ;
+  text-decoration: none;
+}
+
+.aboutCol {
+  padding: -15px !important;
+}
+
+.aboutColPhoto {
+ width: 50vw;
+ height: 50vw;
+  background-image: url(./assets/images/profielfoto.jpg);
+  background-size: cover;
+  display: block
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+
+  padding-right: unset !important;
+  padding-left: unset !important;
+}
+
+.profielfoto {
+  width: 700px;
+  height: 700px;
+}
+
+.intro {
+  padding: 5%;
+  text-align: left;
+}
+
+.introDiv {
+  text-align: right;
+}
+
+.contactform {
+  padding-left: 50px;
+}
+
+.studies, .work, .project, .lang, .skills{
+  border-left: 4px solid #eca09f;
+  margin-left: 10%;
+  padding-left: 3%;
+  
+}
+
+.skills {
+  border-right: 4px solid #eca09f;
+  margin-right: 20%;
+  margin-left: 20% !important;
+  text-align: center;
+}
+
+
+
+
+.studyCover {
+  background-image: url(./assets/images/black-coffee-cup-and-black-notepad-on-black-table-3815759.jpg);
+  background-size: cover;
+  width: 50vw;
+ height: 50vw;
+}
+
+.workCover {
+  background-image: url(./assets/images/werk.jpg);
+  background-size: cover;
+  width: 50vw;
+ height: 50vw;
+}
+
+.CVTitles-study, .CVTitles-project{
+  align-items: baseline;
+  text-align: center !important;
+  position: relative;
+  bottom: 0;
+  top: 80%;
+  font-size: 50px !important;
+  background-image: url(./assets/images/photo-of-white-wall-1484759.jpg);
+  background-size: cover;
+}
+
+.CVTitles-project{
+  top: 70% !important;
+}
+
+.studyDiv, .workDiv, .projectDiv{
+  height: 50vw;
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.CVTitles-work{
+  top:47%;
+  text-align: center !important;
+  position: relative;
+  font-size: 50px !important;
+  color: #171B1E;
+}
+
+.projectCover{
+  background-image: url(./assets/images/projectcover.jpg);
+  background-size: 100%;
+  width: 50vw;
+  height: 50vw;
+}
+
+
+.CVTitles-lang, .CVTitles-skills {
+  text-align: center;
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+
+.CVTitles-lang{
+  color: #9EC6EC;
+  font-size: 70px !important;
+}
+
+.CVTitles-skills, .CVTitles-cv, .CVTitles-contact{
+  background-image: url(./assets/images/tenor.gif) !important;
+  background-size: 130vh;
+  background-position: center;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 70px !important;
+
+}
+
+
+.CVTitles-cv, .CVTitles-contact {
+  text-align: center;
+  font-size: 90px !important;
+}
+
+.langDiv{
+  background-color: #7796b2;
+  padding-top: 10%;
+  width: 50vw;
+  height: 50vw;
+}
+.skillsDiv{
+  width: 50vw;
+  height: 50vw;
+  padding-top: 10%;
+}
+
+.progressbar{
+  width: 80%;
+  height: 0.8rem !important;
+  background-color: #7796b2 !important;
+}
+
+.cvDiv, .contactDiv {
+  background-color: #171B1E;
+  width: 50vw;
+  height: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center  
+}
+
+
+.footer{
+  text-align: center;
+}
+
+.studyTitle, .workTitle, .projectTitle, .langTitle, .skillsTitle {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #9EC6EC;
+  font-size: 20px !important;
+}
+
+.introTitle{
+  text-transform: uppercase;
+  font-size: 28px !important;
+  font-family: 'Candal', sans-serif;
+  color: #7796b2 !important;
+  padding-bottom: 2%;
+
+}
+.langTitle, .skillsTitle{
+  font-size: 20px !important;
+}
+
+.workTitle, .skillsTitle{
+  color: #7796b2 !important;
+}
+
+.langTitle{
+  color: whitesmoke !important;
+}
+
+.studyPlace, .workPlace, .projectSub, .introSub{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 18px !important;
+  color: grey;
+}
+
+.introSub {
+  font-size: 18px !important;
+  margin-right: 35%;
+}
+
+.studyYears, .workYears, .projectYears {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 16px !important;
+  color: grey;
+}
+
+.studyText, .workText, .projectText, .introText {
+  font-family: 'Roboto', sans-serif;
+  color: #9EC6EC;
+  font-weight: lighter;
+}
+
+.introText {
+  text-transform: uppercase !important;
+  font-size: 13px !important;
+}
+
+.fa-star, .fa-caret-right{
+  color: #eca09f
+}
+
+.fa-map-pin{
+  color: #9EC6EC;
+}
+
+.eaca{
+  color: #eca09f;
+}
+
+.eaca:hover {
+  text-decoration: none;
+  color: #e57575;
+}
+
+.footerlink, .introLink, .portfolioLink {
+  color: #9EC6EC;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 14px !important;
+}
+
+.introLink {
+  font-size: 20px !important;
+  padding-left: 4% !important;
+  text-align: right !important;
+
+}
+
+.portfolioLink {
+text-align: center !important;
+font-size: 20px !important;
+margin: 5%;
+}
+
+.portfolioLinkDiv{
+  text-align: center;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.footerlink:hover, .introLink:hover, .portfolioLink:hover {
+  color: #7796b2;
+  text-decoration: none;
+}
+
+
+/* Responsive */
+
+@media screen and (min-width: 1600px) {
+.introTitle {
+  font-size: 45px !important;
+}
+.introDiv{
+  padding-top: 5%;
+}
+.studyTitle, .workTitle, .projectTitle, .langTitle, .skillsTitle {
+  font-size: 25px !important;
+}
+.studyPlace, .workPlace, .projectSub{
+  font-size: 23px !important;
+}
+.studyYears, .workYears, .projectYears {
+  font-size: 21px !important;
+}
+.studyText, .workText, .projectText{
+  font-size: 18px !important;
+}
+.CVTitles-study, .CVTitles-project, .CVTitles-work{
+  font-size: 60px !important;
+}
+.CVTitles-lang, .CVTitles-skills{
+  font-size: 80px !important;
+}
+.CVTitles-cv, .CVTitles-contact{
+  font-size: 100px !important;
+}
+.footerlink{
+  font-size: 19px !important;
+}
+}
+
+@media screen and (min-width: 1900px) {
+  .titles h1, .PhotoTitle, .webAppTitle, .AboutTitle {
+    font-size: 120px !important;
+ }
+ h6 {
+   font-size: 20px !important;
+ }
+ .introDiv{
+  padding-top: 15%;
+}
+.introSub{
+  font-size: 20px !important;
+}
+.introText{
+  font-size: 16px !important;
+}
+.studyTitle, .workTitle, .projectTitle, .langTitle, .skillsTitle {
+  font-size: 28px !important;
+}
+.studyPlace, .workPlace, .projectSub{
+  font-size: 26px !important;
+}
+.studyYears, .workYears, .projectYears {
+  font-size: 24px !important;
+}
+.studyText, .workText, .projectText{
+  font-size: 22px !important;
+}
+.eaca{
+  font-size: 22px !important;
+}
+.introLink, .portfolioLink{
+  font-size: 21px !important;
+}
+.CVTitles-study, .CVTitles-project, .CVTitles-work{
+  font-size: 75px !important;
+}
+.CVTitles-lang, .CVTitles-skills{
+  font-size: 90px !important;
+}
+.CVTitles-cv, .CVTitles-contact{
+  font-size: 120px !important;
+}
+.footerlink{
+  font-size: 21px !important;
+}
+.row {
+  margin-left: 3vh !important
+}
+.kop {
+  font-size: 21px !important;
+}
+.homeBtn, .over-btn{
+  font-size: 19px !important;
+}
+}
+
+@media screen and (max-width: 1370px) {
+  .titles h1, .PhotoTitle, .webAppTitle, .AboutTitle {
+    font-size: 80px !important;
+ }
+ h4 {
+   font-size: 20px !important;
+ }
+ .homeBtn, .over-btn{
+  font-size: 14px !important;
+}
+.introTitle {
+  font-size: 26px !important;
+}
+.studyPlace, .workPlace, .projectSub, .introSub{
+  font-size: 16px !important;
+}
+.introLink, .portfolioLink{
+  font-size: 15px !important;
+}
+.introDiv{
+  padding-top: 5%;
+}
+}
+
+@media screen and (max-width: 1320px) {
+  .introDiv{
+    padding-top: 3%;
+  }
+  .introSub {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .titles h1, .PhotoTitle, .webAppTitle, .AboutTitle {
+    font-size: 75px !important;
+ }
+ h4 {
+  font-size: 18px !important;
+}
+.introTitle {
+  font-size: 20px !important;
+}
+.introText{
+  font-size: 11px !important;
+}
+.studyPlace, .workPlace, .projectSub{
+  font-size: 12px !important;
+}
+.introSub{
+  font-size: 12px !important;
+}
+.introLink, .portfolioLink{
+  font-size: 12px !important;
+}
+.introDiv{
+  padding-top: 5%;
+  margin-top: -7%;
+}
+.studyTitle, .workTitle, .projectTitle, .langTitle, .skillsTitle {
+  font-size: 14px !important;
+}
+.studyYears, .workYears, .projectYears {
+  font-size: 10px !important;
+}
+.studyText, .workText, .projectText{
+  font-size: 10px !important;
+}
+.eaca {
+  font-size: 10px !important;
+
+}
+.CVTitles-study, .CVTitles-project, .CVTitles-work{
+  font-size: 40px !important;
+}
+.CVTitles-lang, .CVTitles-skills{
+  font-size: 50px !important;
+}
+.CVTitles-cv, .CVTitles-contact{
+  font-size: 70px !important;
+}
+.footerlink{
+  font-size: 14px !important;
+}
+
+}
+
+@media screen and (max-width: 770px) {
+  .aboutColPhoto {
+    width: 100vw;
+    height: 100vw;
+  }
+.intro{
+    width: 100vw;
+    height: 90vw;
+  }
+  .titles h1{
+    padding-top: 10%;
+    background-size: 110vw !important;
+ }
+ .homeBtn, .over-btn{
+  font-size: 12px !important;
+}
+.AboutTitle {
+  background-size: 80vw !important;
+  text-align: center !important;
+}
+.intro {
+  text-align: center !important;
+  align-items: center !important;
+  align-self: center !important ;
+}
+.introTitle {
+  font-size: 24px !important;
+  text-align: center;
+  padding-bottom: 0;
+}
+.introSub{
+  font-size: 16px !important;
+  margin-right: 10% !important;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.introDiv{
+  padding-top: 15%;
+}
+.introLink, .portfolioLink{
+  font-size: 16px !important;
+}
+.introText::before {
+content: "\a";
+white-space: pre;
+}
+.displaybig {
+  display: none !important;
+}
+.displaysmall {
+  display: inline-block !important;
+}
+.studyDiv, .workDiv, .projectDiv{
+  height: 90vw;
+  width: 100vw !important;
+}
 }

@@ -1,26 +1,24 @@
 import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron'
+import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import Nav from 'react-bootstrap/Nav';
-import {Link} from 'react-router-dom';
-
-
+import Col from 'react-bootstrap/Col';
 
 function Hero(props) {
-    return (
+
+    return(
         <Jumbotron className="bg-transparent jumbotron-fluid p-0">
-            <Container fluid={true}>
-                <Row className="justify-content-center py-5">
-                    <Col md={8} sm={12}>
-                        {props.title && <h1 className="display-1 font-weight-bolder text-center">{props.title}</h1>}
-                        {props.subtitle && <h3 className="display-4 font-weight-lighter text-center">{props.subtitle}</h3>}
-                        <Nav className="justify-content-center">
-                            <Link className="nav-link text-info" to="/web-applications">Web Applications</Link>
-                            <Link className="nav-link text-info" to="/photography">Photography</Link>
-                            <Link className="nav-link text-info" to="/cv">Bekijk mijn CV</Link>
-                        </Nav>
+            <Container fluid={false}>
+                <Row>
+                    <Col lg={6} md={8} sm={12}>
+                        <div className="titles">
+                       
+                        { props.title && <h1>{props.title}</h1> }
+                        </div>
+                        <div className="subtitle">
+                        { props.subtitle && <h4 className="display-5 font-weight-light">{props.subtitle}</h4> } 
+                        </div>
+                        
                     </Col>
                 </Row>
             </Container>
@@ -28,5 +26,6 @@ function Hero(props) {
     );
 
 }
+
 
 export default Hero;

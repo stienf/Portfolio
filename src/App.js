@@ -1,9 +1,8 @@
 import React from 'react';
 import {
-  HashRouter,
+  BrowserRouter as Router,
   Route,
   Link
-
 } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
@@ -58,8 +57,8 @@ class App extends React.Component {
   }
   render() {
     return (
-      <HashRouter basename='/'>
-        <Container className="p-0" fluid={true}>
+<Router basename={`${process.env.PUBLIC_URL}/`}>
+          <Container className="p-0" fluid={true}>
           <Navbar className="border-bottom" expand="lg">
             <Link className="nav-link title" to="/">STIEN FRANSSENS</Link>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
@@ -81,6 +80,7 @@ class App extends React.Component {
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
           <Route path="/fotografie" render={() => <PhotographyPage title={this.state.fotografie.title}/>} />
           <Route path="/web-applicaties" render={() => <WebAppPage title={this.state.webapps.title}/>} />
+          <Route exact path='/' component={Home}/>
 
           <Route path="/vietnam" render={() => <PhotoPageVietnam />} />
           <Route path="/centraal-amerika" render={() => <PhotoPageCA />} />
@@ -90,11 +90,12 @@ class App extends React.Component {
           <Route path="/analoog" render={() => <PhotoPageAnaloog />} />
 
         </Container>
-        </HashRouter>
+      </Router>
 
     );
+    
   }
-
+  
 }
 
 export default App;

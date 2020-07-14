@@ -45,6 +45,12 @@ class App extends React.Component {
       contact: {
         title: 'Zin in een praatje?',
       },
+      fotografie: {
+        title: 'fotografie'
+      },
+      webapps: {
+        title:'web apps'
+      }
   
       
     }
@@ -72,9 +78,9 @@ class App extends React.Component {
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} />} />
           <Route path="/over" render={() => <AboutPage title={this.state.about.title} />} />
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
+          <Route path="/fotografie" render={() => <PhotographyPage title={this.state.fotografie.title}/>} />
+          <Route path="/web-applicaties" render={() => <WebAppPage title={this.state.webapps.title}/>} />
 
-          <Route path="/fotografie" render={() => <PhotographyPage />} />
-          <Route path="/web-applicaties" render={() => <WebAppPage />} />
           <Route path="/vietnam" render={() => <PhotoPageVietnam />} />
           <Route path="/centraal-amerika" render={() => <PhotoPageCA />} />
           <Route path="/zuid-afrika" render={() => <PhotoPageZA />} />

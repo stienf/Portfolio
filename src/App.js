@@ -1,10 +1,10 @@
 import React from 'react';
 import {
-  BrowserRouter as 
+  HashRouter,
   Route,
   Link
+
 } from "react-router-dom";
-import {HashRouter} from "react-router-dom"
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';

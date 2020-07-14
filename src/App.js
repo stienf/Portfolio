@@ -82,7 +82,6 @@ class App extends React.Component {
           <Route path="/kask" render={() => <PhotoPageKask />} />
           <Route path="/marrakech" render={() => <PhotoPageMar />} />
           <Route path="/analoog" render={() => <PhotoPageAnaloog />} />
-          <Route path="/cv" render={() => <CvPage />} />
 
         </Container>
       </Router>

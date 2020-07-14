@@ -9,7 +9,7 @@ import Container from 'react-bootstrap/Container';
 function HomePage(props) {
     return (
         <div className="homepage">
-            <Hero title={props.title} subtitle={props.subtitle} text={props.text} />
+            <Hero className="hometitle" title={props.title} subtitle={props.subtitle} text={props.text} />
             <Container fluid={false}>
                 <Row>
                     <Col md={8} sm={12}>

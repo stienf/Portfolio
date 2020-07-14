@@ -16,7 +16,7 @@ body {
 
 .titles h1, .PhotoTitle, .webAppTitle, .AboutTitle {
 font-family: 'Candal', sans-serif;
-font-size: 100px;
+font-size: 90px;
 text-transform: uppercase;
 color: rgba(158, 198, 236, 0.5);
 background-image: url(./assets/images/ezgif.com-crop.gif);
@@ -148,6 +148,7 @@ text-transform: uppercase;
   padding: 8px;
   border-color: transparent;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 
@@ -158,6 +159,10 @@ text-transform: uppercase;
 
 h4 {
   font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+  font-size: 20px !important;
 }
 
 h6 {
@@ -564,11 +569,10 @@ text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 14px !important;
 }
 
 .introLink {
-  font-size: 20px !important;
+  font-size: 16px !important;
   padding-left: 4% !important;
   text-align: right !important;
 
@@ -576,7 +580,7 @@ text-align: center;
 
 .portfolioLink {
 text-align: center !important;
-font-size: 20px !important;
+font-size: 16px !important;
 margin: 5%;
 }
 
@@ -810,7 +814,7 @@ margin: 5%;
 .introDiv{
   padding-top: 15%;
 }
-.introLink, .portfolioLink{
+.introLink{
   font-size: 16px !important;
 }
 .introText::before {
@@ -827,4 +831,160 @@ white-space: pre;
   height: 90vw;
   width: 100vw !important;
 }
+.studyTitle, .workTitle, .projectTitle {
+  font-size: 20px !important;
 }
+.studyYears, .workYears, .projectYears {
+  font-size: 15px !important;
+}
+.studyPlace, .workPlace, .projectSub{
+  font-size: 17px !important;
+}
+.studyText, .workText, .projectText{
+  font-size: 14px !important;
+}
+.eaca {
+  font-size: 14px !important;
+}
+.langDiv{
+  width: 50vw;
+  height: 50vw;
+}
+.skillsDiv {
+  width: 50vw;
+  height: 50vw;
+}
+.CVTitles-lang, .CVTitles-skills{
+  font-size: 40px !important;
+  padding-top: unset;
+}
+.langTitle, .skillsTitle{
+  font-size: 12px !important;
+  
+}
+.portfolioLink{
+  font-size: 14px !important;
+}
+.CVTitles-cv, .CVTitles-contact{
+  font-size: 50px !important;
+}
+.footerlink{
+  font-size: 12px !important;
+}
+}
+@media screen and (max-width: 420px) {
+
+  .titles h1, .PhotoTitle, .webAppTitle, .AboutTitle {
+    font-size: 50px !important;
+  }
+  .titles h1{
+display: inline;  
+}
+.homepage {
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+  padding-top: 25% !important;
+}
+h4 {
+  font-size: 14px !important;
+  padding-top: 2%;
+}
+.homeBtn, .over-btn{
+  font-size: 10px !important;
+}
+.introTitle {
+  font-size: 11px !important;
+  text-align: center;
+  padding-bottom: 0;
+  margin-top: -15px !important;
+}
+.AboutTitle{
+  font-size: 30px !important;
+}
+.introText{
+  font-size: 8px !important;
+}
+.introSub{
+  font-size: 10px !important;
+  margin-right: 5% !important;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.intro{
+  width: 100vw;
+  height: 110vw !important ;
+}
+.introDiv{
+  padding: 0;
+  text-align: center;
+}
+.introLink{
+  font-size: 10px !important;
+}
+.studyCover, .workCover, .projectCover{
+  width: 100vw;
+  height: 100vw;
+}
+.studyTitle, .workTitle, .projectTitle, .langTitle {
+  font-size: 12px !important;
+}
+.studyYears, .workYears, .projectYears {
+  font-size: 10px !important;
+}
+.studyPlace, .workPlace, .projectSub{
+  font-size: 11px !important;
+}
+
+.studyText, .workText, .projectText{
+  font-size: 10px !important;
+}
+.eaca {
+  font-size: 10px !important;
+}
+.studyDiv, .workDiv, .projectDiv{
+  height: 100vw;
+  width: 110vw !important;
+}
+
+.studies, .work, .project, .lang, .skills{
+  border-left: 2px solid #eca09f;
+  margin-left: 10%;
+  padding-left: 2%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  
+}
+.br{content:' ';}
+.br:after{content:' ';}
+
+.CVTitles-study, .CVTitles-project, .CVTitles-work, .CVTitles-skills, .CVTitles-lang{
+  font-size: 30px !important;
+}
+
+.langDiv, .skillsDiv{
+  width: 100vw;
+  height: 100vw;
+}
+ .skillsTitle, .langTitle{
+   font-size: 10px !important;
+ }
+
+ .CVTitles-skills{
+   padding-bottom: 5%;
+   padding-top: 0; 
+ }
+
+ .cvDiv, .contactDiv{
+   width: 100vw;
+   height: 50vw;
+ }
+.footerlink{
+  font-size: 10px !important;
+}
+
+.introDiv{
+  padding-top: 5%;
+}
+
+}
+

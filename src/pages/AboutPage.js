@@ -19,10 +19,10 @@ function AboutPage(props) {
                         <div className="intro">
                             <h2 className="AboutTitle">Over Mij</h2>
                             <h5 className="introTitle">Stien <br/> Franssens <span className="introText"><i class="fas fa-map-pin"></i>   Gent</span></h5> 
-                            <p className="introSub">Welkom! <br/><br/>
+                            <p className="introSub">Welkom! <br/><br className="br"/>
                                                     Ik ben Stien, een enthousiaste creatieveling met kennis van online marketing, web development en fotografie.<br/>
                                                    Een marketing- of communicatiefunctie waar ik mijn creatieve geest en inlevingsvermogen optimaal kan benutten, daar kijk ik naar uit!<br/>
-                                                    Collegialiteit en professionele groei zijn waarden die ik hoog in het vaandel draag op de werkvloer.<br/><br/>
+                                                    Collegialiteit en professionele groei zijn waarden die ik hoog in het vaandel draag op de werkvloer.<br/><br className="br"/>
                                                     Ik kijk ernaar uit u te ontmoeten!
                                                     </p><br/>
                             <div className="introDiv">
@@ -45,15 +45,15 @@ function AboutPage(props) {
                                 <p className="studyPlace">Intec Brussel</p>
                                 <p className="studyYears">februari 2020 - september 2020</p>
                             </div>
-                            <br /> <br />
+                            <br className="br" /> <br className="br"/>
                             <div className="studies">
                                 <h5 className="studyTitle">Bachelor Communicatiemanagement</h5>
                                 <p className="studyPlace">Arteveldehogeschool Gent</p>
                                 <p className="studyYears">september 2014 - januari 2018</p>
-                                <p className="studyText"><i class="fas fa-star"> </i> Afgestudeerd met onderscheiding</p>
-                                <p className="studyText"><i class="fas fa-star"> </i> Laureaat 'Beste Praktijkcase 2016-2017'   | <a className="eaca" href="#eaca"> meer info</a></p>
+                                <p className="studyText"><i class="fas fa-star"></i> Afgestudeerd met onderscheiding</p>
+                                <p className="studyText"><i class="fas fa-star"></i> Laureaat 'Beste Praktijkcase 2016-2017'   | <a className="eaca" href="#eaca"> meer info</a></p>
                             </div>
-                            <br /> <br />
+                            <br className="br"/> <br className="br"/>
                             <div className="studies">
                                 <h5 className="studyTitle">Eerste Bachelor Fotografie</h5>
                                 <p className="studyPlace">KASK Gent</p>
@@ -76,7 +76,7 @@ function AboutPage(props) {
                                 <p className="studyPlace">Intec Brussel</p>
                                 <p className="studyYears">februari 2020 - september 2020</p>
                             </div>
-                            <br /> <br />
+                            <br className="br" /> <br className="br"/>
                             <div className="studies">
                                 <h5 className="studyTitle">Bachelor Communicatiemanagement</h5>
                                 <p className="studyPlace">Arteveldehogeschool Gent</p>
@@ -84,7 +84,7 @@ function AboutPage(props) {
                                 <p className="studyText"><i class="fas fa-star"> </i> Afgestudeerd met onderscheiding</p>
                                 <p className="studyText"><i class="fas fa-star"> </i> Laureaat 'Beste Praktijkcase 2016-2017'   | <a className="eaca" href="#eaca"> meer info</a></p>
                             </div>
-                            <br /> <br />
+                            <br className="br"/> <br className="br"/>
                             <div className="studies">
                                 <h5 className="studyTitle">Eerste Bachelor Fotografie</h5>
                                 <p className="studyPlace">KASK Gent</p>
@@ -107,13 +107,13 @@ function AboutPage(props) {
                                 <p className="workText"><i class="fas fa-caret-right"> </i> Sollicitatiegesprekken voeren en opvolgen</p>
                                 <p className="workText"><i class="fas fa-caret-right"> </i> Contracten aanmaken en planning doorgeven</p>
                             </div>
-                            <br /> <br />
+                            <br className="br"/> <br className="br" />
                             <div className="work">
                                 <h5 className="workTitle">Business Support Officer</h5>
                                 <p className="workPlace">Tobania | ING - Gent</p>
                                 <p className="workYears">september 2014 - januari 2018</p>
                             </div>
-                            <br /> <br />
+                            <br className="br"/> <br className="br"/>
                             <div className="work">
                                 <h5 className="workTitle">Stagiaire Communicatie/Online Marketing</h5>
                                 <p className="workPlace">La Esperanza Granada - Nicaragua</p>
@@ -124,7 +124,10 @@ function AboutPage(props) {
                         </div>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="displaysmall">
+                <Col className="projectCover" lg={6}>
+                        <h3 className="CVTitles-project">Projecten & Certificaten</h3>                    
+                        </Col>
                     <Col className="aboutcol" lg={6}>
                         <div className="projectDiv">
                             <div className="project">
@@ -134,13 +137,41 @@ function AboutPage(props) {
                                 <p className="projectText">Top 10 finalist in Europese wedstrijd | Laureaat 'Beste Praktijkcase'</p>
                                 <a className="eaca" href="https://www.eaca-inspire.eu/students/ad-venture/previous-editions/winners-2017/">Bekijk Project | Team SKIRT</a>
                             </div>
-                            <br /> <br />
+                            <br className="br"/> <br className="br"/>
                             <div className="project">
                                 <h5 className="projectTitle">Google Certificaat </h5>
                                 <p className="projectSub">De Basisprincipes van Online Marketing</p>
                                 <p className="projectYears">2020</p>
                             </div>
-                            <br /> <br />
+                            <br className="br"/> <br className="br"/>
+                            <div className="project">
+                                <h5 className="projectTitle">Google Certificaat</h5>
+                                <p className="projectSub">Google Analytics Individual Qualification</p>
+                                <p className="projectYears">2020</p>
+                            </div>
+                        </div>
+                    </Col>
+             
+
+                </Row>
+
+                <Row className="displaybig">
+                    <Col className="aboutcol" lg={6}>
+                        <div className="projectDiv">
+                            <div className="project">
+                                <h5 className="projectTitle" id="eaca">EACA Ad Venture Competition</h5>
+                                <p className="projectSub">"Raising awareness for gender equality"</p>
+                                <p className="projectYears">2017 </p>
+                                <p className="projectText">Top 10 finalist in Europese wedstrijd | Laureaat 'Beste Praktijkcase'</p>
+                                <a className="eaca" href="https://www.eaca-inspire.eu/students/ad-venture/previous-editions/winners-2017/">Bekijk Project | Team SKIRT</a>
+                            </div>
+                            <br className="br"/> <br className="br"/>
+                            <div className="project">
+                                <h5 className="projectTitle">Google Certificaat </h5>
+                                <p className="projectSub">De Basisprincipes van Online Marketing</p>
+                                <p className="projectYears">2020</p>
+                            </div>
+                            <br className="br"/> <br className="br"/>
                             <div className="project">
                                 <h5 className="projectTitle">Google Certificaat</h5>
                                 <p className="projectSub">Google Analytics Individual Qualification</p>
@@ -152,27 +183,29 @@ function AboutPage(props) {
                         <h3 className="CVTitles-project">Projecten & Certificaten</h3>                    </Col>
 
                 </Row>
+
+
                 <Row>
-                    <Col className="aboutcol" lg={6}>
+                    <Col className="aboutcol" lg={6}  md={6} sm={6} xs={12}>
                         <div className="langDiv">
                             <h3 className="CVTitles-lang">Talen</h3>
                             <div className="lang">
                                 <h5 className="langTitle">Nederlands</h5>
                                 <ProgressBar now={100} variant="light" className="progressbar" />
                             </div>
-                            <br /> <br />
+                            <br className="br"/> <br className="br" />
                             <div className="lang">
                                 <h5 className="langTitle">Engels</h5>
                                 <ProgressBar now={85} variant="light" className="progressbar" />
                             </div>
-                            <br /> <br />
+                            <br className="br"/> <br className="br"/>
                             <div className="lang">
                                 <h5 className="langTitle">Frans</h5>
                                 <ProgressBar now={60} variant="light" className="progressbar" />
                             </div>
                         </div>
                     </Col>
-                    <Col className="aboutcol" lg={6}>
+                    <Col className="aboutcol" lg={6} md={6} sm={6} xs={12}>
                         <div className="skillsDiv">
                             <h3 className="CVTitles-skills">skills</h3>
                             <div className="skills">
@@ -205,16 +238,16 @@ function AboutPage(props) {
                     </Col>
                 </Row>
                 <Row className="footerDiv">
-                    <Col className="aboutcol" lg={6}>
+                    <Col className="aboutcol" lg={6}  md={6} sm={6} xs={12}>
                     <div className="contactDiv">
                         <div className="footer">
                             <h3 className="CVTitles-contact">Contact</h3>
-                            <br />
+                            <br className="br"/>
                             <a className="footerlink" href="/contact">klik hier</a>
                         </div>
                         </div>
                     </Col>
-                    <Col className="aboutcol" lg={6}>
+                    <Col className="aboutcol" lg={6}  md={6} sm={6} xs={12}>
                         <div className="cvDiv">
                         <div className="footer">
 

@@ -10,7 +10,7 @@ function Hero(props) {
         <Jumbotron className="bg-transparent jumbotron-fluid p-0">
             <Container fluid={false}>
                 <Row>
-                    <Col lg={6} md={8} sm={12}>
+                    <Col lg={6} md={8} xs={12}>
                         <div className="titles">
                        
                         { props.title && <h1>{props.title}</h1> }

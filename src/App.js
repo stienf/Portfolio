@@ -4,6 +4,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import {HashRouter} from "react-router-dom"
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -57,7 +58,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <Router>
+      <HashRouter basename='/'>
         <Container className="p-0" fluid={true}>
           <Navbar className="border-bottom" expand="lg">
             <Link className="nav-link title" to="/">STIEN FRANSSENS</Link>
@@ -89,7 +90,7 @@ class App extends React.Component {
           <Route path="/analoog" render={() => <PhotoPageAnaloog />} />
 
         </Container>
-      </Router>
+        </HashRouter>
 
     );
   }
